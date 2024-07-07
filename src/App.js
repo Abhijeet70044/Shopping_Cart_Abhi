@@ -44,6 +44,7 @@ const App = () => {
         <GlobalStyle />
         <Header />
         <Routes>
+          <Route path="/Shopping_Cart_Abhi" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
