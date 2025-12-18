@@ -1,10 +1,10 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import './cartItem.css';
 import { ShopContext } from '../../Context/shopContext'
 import remove_icon from '../Assets/cart_cross_icon.png';
 
 const CartItems = () => {
-    const {getTotalCartAmount,all_product, cartItems, removeFromCart } = useContext(ShopContext)
+    const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext)
     return (
         <div className='cartitems'>
             <div className='cartitems-format-main'>
@@ -25,11 +25,11 @@ const CartItems = () => {
                             <p>{e.new_price}</p>
                             <button className='cartitems-quantity'>{cartItems[e.id]}</button>
                             <p>{e.new_price * cartItems[e.id]}</p>
-                            <p><img className='cartitems-remove-icon' onClick={() => removeFromCart(e.id)} src={remove_icon} alt='' /></p>
+                            <p><img className='cartitems-remove-icon' onClick={() => removeFromCart(e.id)} src={remove_icon} alt='cart-item-remove' /></p>
                         </div>
                         <hr />
                     </div>
-                } 
+                }
                 return null;
             })}
             <div className="cartitems-down">
@@ -61,8 +61,8 @@ const CartItems = () => {
                     </div>
                 </div>
             </div>
-            </div> 
-            )
+        </div>
+    )
 }
 
-            export default CartItems;
+export default CartItems;

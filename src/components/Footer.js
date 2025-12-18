@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
@@ -50,7 +49,8 @@ const Footer = () => {
                 <div>
                   <a
                     href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank">
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <FaYoutube className="icons" />
                   </a>
                 </div>
