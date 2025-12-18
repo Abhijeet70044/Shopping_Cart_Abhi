@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
@@ -44,7 +43,6 @@ const App = () => {
         <GlobalStyle />
         <Header />
         <Routes>
-          <Route path="/Shopping_Cart_Abhi" element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
